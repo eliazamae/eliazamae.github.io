@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,46 +9,161 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --canvas: #151514;
+            /* dark background */
+            --header: #e9e8d2;
+            /* beige header */
+            --card-1: #5f6a61;
+            /* dark sage */
+            --card-2: #a8b495;
+            /* mid sage */
+            --card-3: #dfe5d6;
+            /* light sage */
+            --ink: #0f0f0f;
+            --radius: 20px;
+            --radius-lg: 24px;
+            --shadow: 0 8px 22px rgba(0, 0, 0, .25);
+            --shadow-soft: 0 4px 12px rgba(0, 0, 0, .18);
+        }
+
+        body {
+            background: var(--canvas) !important;
+        }
+
+        .nav-plate {
+            background: var(--header) !important;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .tile {
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .tile-dark {
+            background: var(--ink) !important;
+        }
+
+        .tile-soft {
+            background: var(--card-2) !important;
+        }
+
+        .tile-soft-2 {
+            background: var(--card-1) !important;
+        }
+
+        .tile-light {
+            background: #fff !important;
+            color: #111 !important;
+        }
+
+        .tile-cream {
+            background: var(--header) !important;
+            color: #111 !important;
+        }
+
+        .rounded-xl {
+            border-radius: var(--radius-lg) !important;
+        }
+
+        .header-spacing {
+            margin: 12px 16px;
+        }
+
+        /* Desktop sizing to closely match mockup */
+        @media (min-width: 1200px) {
+            .h-intro {
+                height: 360px;
+            }
+
+            .h-tech {
+                height: 140px;
+            }
+
+            .h-tools {
+                min-height: 140px;
+            }
+
+            .h-hero {
+                min-height: 420px;
+            }
+
+            .h-blurb {
+                min-height: 210px;
+            }
+
+            .h-soft {
+                min-height: 210px;
+            }
+
+            .h-cta {
+                min-height: 140px;
+            }
+
+            .h-spacer {
+                min-height: 100px;
+            }
+
+            .h-activities {
+                min-height: 380px;
+            }
+
+            .h-activity-card {
+                min-height: 240px;
+            }
+        }
+    </style>
 </head>
-<body class="bg-dark text-white pt-5" style="font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+
+<body class="text-white pt-5"
+    style="font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
     <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3" role="navigation" aria-label="Main">
-    <div class="container-fluid px-3 px-md-4 px-lg-5">
-        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#home">
-            <span class="fs-4">ELIAZA MAE MALIBIRAN</span>
-        </a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto gap-2 gap-lg-4">
-                <li class="nav-item">
-                    <a class="nav-link active text-white fw-semibold px-4 px-lg-5 rounded-pill" aria-current="page" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white fw-semibold px-4 px-lg-5 rounded-pill" href="#activities">Activities</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white fw-semibold px-4 px-lg-5 rounded-pill" href="#contact-cta">Contact</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 header-spacing nav-plate" role="navigation"
+        aria-label="Main">
+        <div class="container-fluid px-3 px-md-4 px-lg-5">
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#home">
+                <span class="fs-4">ELIAZA MAE MALIBIRAN</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2 gap-lg-4">
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark fw-semibold fst-italic px-4 px-lg-5 rounded-pill"
+                            aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-semibold fst-italic px-4 px-lg-5 rounded-pill"
+                            href="#activities">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-semibold fst-italic px-4 px-lg-5 rounded-pill"
+                            href="#contact-cta">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
     <!-- Home/Mosaic Section (Bootstrap-only) -->
-    <section id="home" class="min-vh-100 py-5">
-        <div class="container-fluid px-3 px-md-4 px-lg-5">
-            <div class="row g-4 align-items-stretch min-vh-100">
+    <section id="home" class="" style="min-height: calc(100vh - 96px);">
+        <div class="container-fluid px-3 px-md-4 px-lg-5 h-100">
+            <div class="row g-4 align-items-stretch h-100">
                 <!-- Left rail -->
                 <div class="col-lg-3 order-2 order-lg-1 d-flex flex-column gap-4 h-100">
-                    <div class="bg-light text-dark rounded-4 p-4 shadow">
+                    <div class="tile tile-cream text-dark p-4 h-intro">
                         <h5 class="fw-bold mb-3">ELIAZA MAE MALIBIRAN</h5>
-                        <p class="mb-0 small">A THIRD YEAR BS INFORMATION TECHNOLOGY STUDENT AT POLYTECHNIC UNIVERSITY OF THE PHILIPPINES.</p>
+                        <p class="mb-0 small">A THIRD YEAR BS INFORMATION TECHNOLOGY STUDENT AT POLYTECHNIC UNIVERSITY
+                            OF THE PHILIPPINES.</p>
                     </div>
-                    <div class="bg-secondary-subtle rounded-4 p-4 shadow-sm">
+                    <div class="tile tile-soft text-dark p-4 h-tech">
                         <div class="d-flex gap-3 flex-wrap">
                             <span class="badge text-bg-dark fs-6">HTML</span>
                             <span class="badge text-bg-warning fs-6">JS</span>
@@ -55,7 +171,7 @@
                             <span class="badge text-bg-info fs-6">Bootstrap</span>
                         </div>
                     </div>
-                    <div class="bg-secondary-subtle rounded-4 p-4 d-flex justify-content-between align-items-center shadow-sm flex-fill">
+                    <div class="tile tile-soft text-dark p-4 d-flex justify-content-between align-items-center h-tools">
                         <span class="small">Tools</span>
                         <span class="fs-4">⚙️</span>
                     </div>
@@ -63,46 +179,50 @@
 
                 <!-- Center media card -->
                 <div class="col-lg-5 order-1 order-lg-2 d-flex flex-column gap-4 h-100">
-                    <div class="bg-dark rounded-4 p-3 shadow flex-fill">
+                    <div class="tile tile-dark p-3 h-hero">
                         <div class="rounded-4 overflow-hidden">
-                            <img src="https://via.placeholder.com/800x500/1F7D53/FFFFFF?text=Profile+Photo" class="img-fluid" alt="Portrait of Eliaza Mae Malibiran" />
+                            <img src="profile photo.jpg" class="img-fluid" alt="Portrait of Eliaza Mae Malibiran" />
                         </div>
                     </div>
-                    <div class="bg-light text-dark rounded-4 p-4 shadow-sm">
-                        <p class="mb-0">I'm Eliaza Mae, an aspiring Full‑Stack Developer passionate about building efficient, scalable, and user‑friendly web applications.</p>
+                    <div class="tile tile-cream text-dark p-4 h-blurb">
+                        <p class="mb-0">I'm Eliaza Mae, an aspiring Full‑Stack Developer passionate about building
+                            efficient, scalable, and user‑friendly web applications.</p>
                     </div>
                 </div>
 
                 <!-- Right column -->
                 <div class="col-lg-4 order-3 d-flex flex-column gap-4 h-100">
-                    <div class="bg-secondary-subtle rounded-4 p-4 shadow-sm flex-fill">
+                    <div class="tile tile-soft text-dark p-4 h-soft">
                         <div class="display-5 fw-semibold text-dark">Software</div>
                         <div class="h2 fw-bold text-secondary">development</div>
                     </div>
-                    <div class="bg-light rounded-4 p-4 text-dark shadow" id="contact-cta">
+                    <div class="tile tile-cream text-dark p-4 h-cta" id="contact-cta">
                         <p class="small mb-2">Have some questions?</p>
-                        <a href="#contact-cta" class="btn btn-outline-dark w-100 fw-semibold rounded-pill" aria-label="Contact me">Contact Me</a>
+                        <a href="#contact-cta" class="btn btn-outline-dark w-100 fw-semibold rounded-pill"
+                            aria-label="Contact me">Contact Me</a>
                     </div>
-                    <div class="bg-secondary-subtle rounded-4 p-4 shadow-sm"></div>
+                    <div class="tile tile-soft text-dark p-4 h-spacer"></div>
                 </div>
             </div>
 
             <!-- Activities area -->
             <div class="row g-4 mt-1" id="activities">
                 <div class="col-lg-7">
-                    <div class="bg-secondary-subtle rounded-4 p-4 h-100 shadow-sm">
+                    <div class="tile tile-soft-2 p-4 h-activities">
                         <p class="mb-0">Recent activities and featured work will appear here.</p>
                     </div>
                 </div>
                 <div class="col-lg-5">
                     <div class="row g-4">
                         <div class="col-6">
-                            <div class="bg-light rounded-4 p-4 text-center text-dark h-100 d-flex flex-column justify-content-end shadow-sm">
+                            <div
+                                class="tile tile-light p-4 text-center h-activity-card d-flex flex-column justify-content-end">
                                 <div class="fw-bold">ACTIVITY 4</div>
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="bg-light rounded-4 p-4 text-center text-dark h-100 d-flex flex-column justify-content-end shadow-sm">
+                            <div
+                                class="tile tile-light p-4 text-center h-activity-card d-flex flex-column justify-content-end">
                                 <div class="fw-bold">ACTIVITY 5</div>
                             </div>
                         </div>
@@ -112,18 +232,5 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="text-white text-center py-4" style="background: transparent; border-top: 1px solid #1F7D53;">
-        
-        <div class="container-fluid px-3 px-md-4 px-lg-5 position-relative">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p class="mb-0">&copy; 2025 Eliaza Mae Malibiran. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
