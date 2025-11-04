@@ -1,0 +1,25 @@
+{
+  "extends": ["@hint/configuration-web-recommended"],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "hints": {
+    "apple-touch-icons": "error",
+    "button-type": "error",
+    "disown-opener": "error",
+    "highest-available-document-mode": "error",
+    "html-checker": "error",
+    "image-optimization-cloudinary": [
+      "error",
+      {
+        "cloudinaryCloudName": "your_cloud_name"
+      }
+    ],
+    "meta-charset-utf-8": "error",
+    "meta-viewport": "error",
+    "no-bom": "error",
+    "no-protocol-relative-urls": "error",
+    "sri": "error"
+  }
+}

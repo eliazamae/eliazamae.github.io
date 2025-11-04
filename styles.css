@@ -1,0 +1,58 @@
+/* Theme tokens */
+:root {
+  --color-canvas: #27391C;
+  --brand-600: #1F7D53; /* primary accent */
+  --brand-650: #255F38; /* heading accent */
+  --brand-700: #225F38; /* buttons/links */
+  --text-light: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.8);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 22px;
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.12);
+  --shadow-lg: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* Base */
+html, body { height: 100%; }
+body {
+  background: var(--color-canvas);
+  min-height: 100vh;
+  color: var(--text-light);
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #f9f9f8;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+p { color: var(--text-light); }
+
+/* Navigation matches canvas color */
+.navbar {
+  background: var(--color-canvas) !important;
+}
+
+/* Anchor scroll offset for fixed navbar */
+section[id] { scroll-margin-top: 100px; }
+@media (max-width: 991.98px) {
+  section[id] { scroll-margin-top: 70px; }
+}
+
+/* Hero spacing extracted from inline */
+.section-hero {
+  padding: 120px 0 80px;
+  min-height: 100vh;
+}
+
+/* Helpful utilities for upcoming checkpoints (safe no-op for now) */
+.text-muted-soft { color: var(--text-muted); }
+.rounded-xl { border-radius: var(--radius-xl); }
+.shadow-md { box-shadow: var(--shadow-md); }

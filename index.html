@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+</head>
+<body class="bg-dark text-white" style="font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3">
+    <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#home">
+            <span class="fs-4">Personal Portfolio</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto gap-4">
+                <li class="nav-item">
+                    <a class="nav-link text-white fw-semibold px-5 rounded-pill" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fw-semibold px-5 rounded-pill" href="#activities">Activities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fw-semibold px-5 rounded-pill" href="#contact-cta">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Home/Mosaic Section (Bootstrap-only) -->
+    <section id="home" class="min-vh-100 py-5">
+        <div class="container">
+            <div class="row g-4 align-items-start">
+                <!-- Left rail -->
+                <div class="col-lg-3">
+                    <div class="bg-light text-dark rounded-4 p-4 mb-4">
+                        <h5 class="fw-bold mb-3">ELIAZA MAE MALIBIRAN</h5>
+                        <p class="mb-0 small">A THIRD YEAR BS INFORMATION TECHNOLOGY STUDENT AT POLYTECHNIC UNIVERSITY OF THE PHILIPPINES.</p>
+                    </div>
+                    <div class="bg-secondary bg-opacity-25 rounded-4 p-4 mb-4">
+                        <div class="d-flex gap-3 flex-wrap">
+                            <span class="badge text-bg-dark fs-6">HTML</span>
+                            <span class="badge text-bg-warning fs-6">JS</span>
+                            <span class="badge text-bg-danger fs-6">CSS</span>
+                            <span class="badge text-bg-info fs-6">Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="bg-secondary bg-opacity-25 rounded-4 p-4 d-flex justify-content-between align-items-center">
+                        <span class="small">Tools</span>
+                        <span class="fs-4">⚙️</span>
+                    </div>
+                </div>
+
+                <!-- Center media card -->
+                <div class="col-lg-5">
+                    <div class="bg-dark rounded-4 p-3 shadow">
+                        <div class="rounded-4 overflow-hidden">
+                            <img src="https://via.placeholder.com/800x500/1F7D53/FFFFFF?text=Profile+Photo" class="img-fluid" alt="Profile photo" />
+                        </div>
+                    </div>
+                    <div class="bg-light text-dark rounded-4 p-4 mt-4">
+                        <p class="mb-0">I'm Eliaza Mae, an aspiring Full‑Stack Developer passionate about building efficient, scalable, and user‑friendly web applications.</p>
+                    </div>
+                </div>
+
+                <!-- Right column -->
+                <div class="col-lg-4">
+                    <div class="bg-secondary bg-opacity-25 rounded-4 p-4 mb-4">
+                        <div class="display-5 fw-semibold text-dark">Software</div>
+                        <div class="h2 fw-bold text-secondary">development</div>
+                    </div>
+                    <div class="bg-light rounded-4 p-4 mb-4 text-dark" id="contact-cta">
+                        <p class="small mb-2">Have some questions?</p>
+                        <a href="#contact-cta" class="btn btn-outline-dark w-100 fw-semibold rounded-pill">Contact Me</a>
+                    </div>
+                    <div class="bg-secondary bg-opacity-25 rounded-4 p-4"></div>
+                </div>
+            </div>
+
+            <!-- Activities area -->
+            <div class="row g-4 mt-1" id="activities">
+                <div class="col-lg-7">
+                    <div class="bg-secondary bg-opacity-25 rounded-4 p-4 h-100"></div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="row g-4">
+                        <div class="col-6">
+                            <div class="bg-light rounded-4 p-4 text-center text-dark h-100 d-flex flex-column justify-content-end">
+                                <div class="fw-bold">ACTIVITY 4</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="bg-light rounded-4 p-4 text-center text-dark h-100 d-flex flex-column justify-content-end">
+                                <div class="fw-bold">ACTIVITY 5</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section (hidden for minimal mockup) -->
+    <section id="projects" class="py-5 d-none" style="scroll-margin: 100px;">
+        <!-- Background decorative elements removed -->
+        
+        <div class="container position-relative">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-4 fw-bold mb-4" style="color: #ffffff;">My Projects</h2>
+                    <div class="position-relative">
+                        <div style="width: 100px; height: 4px; background: #1F7D53; margin: 0 auto; border-radius: 2px;"></div>
+                    </div>
+                    <p class="mt-4 fs-5" style="color: rgba(255,255,255,0.8);">Here are some of my recent projects that showcase my skills and passion for development.</p>
+                </div>
+            </div>
+            <div class="row">
+				<div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 h-100" style="border-radius: 15px; background: rgba(255, 255, 255, 0.9); border: 1px solid #1F7D53;">
+                        <div class="d-flex align-items-center justify-content-center text-white fw-semibold" style="height: 200px; background: #1F7D53; font-size: 1.1rem; border-radius: 15px 15px 0 0;">
+							<span>E-Tech Appliances and Gadgets E-Commerce Site</span>
+						</div>
+						<div class="card-body p-4">
+							<h5 class="card-title fw-semibold mb-3" style="color: #18230F;">E-Tech Appliances and Digital E-Commerce Site</h5>
+							<p class="card-text">Online store for electronics and appliances with product catalog, cart, checkout, and order tracking.</p>
+							<div class="d-flex gap-2">
+								<span class="badge bg-secondary">HTML5</span>
+								<span class="badge bg-secondary">PHP</span>
+								<span class="badge bg-secondary">MySQL</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 h-100" style="border-radius: 15px; background: rgba(255, 255, 255, 0.9); border: 1px solid #1F7D53;">
+                        <div class="d-flex align-items-center justify-content-center text-white fw-semibold" style="height: 200px; background: #1F7D53; font-size: 1.1rem; border-radius: 15px 15px 0 0;">
+							<span>Tranquil Trails Resort Booking Website</span>
+						</div>
+						<div class="card-body p-4">
+							<h5 class="card-title fw-semibold mb-3" style="color: #18230F;">Tranquil Trails Resort Booking Website</h5>
+							<p class="card-text">Resort site with room listings, availability calendar, booking requests, and contact/inquiry forms.</p>
+							<div class="d-flex gap-2">
+								<span class="badge bg-secondary">Bootstrap</span>
+								<span class="badge bg-secondary">JavaScript</span>
+								<span class="badge bg-secondary">PHP</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 h-100" style="border-radius: 15px; background: rgba(255, 255, 255, 0.9); border: 1px solid #1F7D53;">
+                        <div class="d-flex align-items-center justify-content-center text-white fw-semibold" style="height: 200px; background: #1F7D53; font-size: 1.1rem; border-radius: 15px 15px 0 0;">
+							<span>Dreamscape Dash: An Obstacle Game</span>
+						</div>
+						<div class="card-body p-4">
+							<h5 class="card-title fw-semibold mb-3" style="color: #18230F;">Dreamscape Dash: An Obstacle Game</h5>
+							<p class="card-text">Endless-runner style browser game with increasing difficulty, score tracking, and responsive controls.</p>
+							<div class="d-flex gap-2">
+								<span class="badge bg-secondary">JavaScript</span>
+								<span class="badge bg-secondary">CSS3</span>
+								<span class="badge bg-secondary">HTML5</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 h-100" style="border-radius: 15px; background: rgba(255, 255, 255, 0.9); border: 1px solid #1F7D53;">
+                        <div class="d-flex align-items-center justify-content-center text-white fw-semibold" style="height: 200px; background: #1F7D53; font-size: 1.1rem; border-radius: 15px 15px 0 0;">
+							<span>Tetris Game</span>
+						</div>
+						<div class="card-body p-4">
+							<h5 class="card-title fw-semibold mb-3" style="color: #18230F;">Tetris Game</h5>
+							<p class="card-text">Classic Tetris implementation featuring line clears, levels, next piece preview, and keyboard controls.</p>
+							<div class="d-flex gap-2">
+								<span class="badge bg-secondary">JavaScript</span>
+								<span class="badge bg-secondary">CSS3</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 h-100" style="border-radius: 15px; background: rgba(255, 255, 255, 0.9); border: 1px solid #1F7D53;">
+                        <div class="d-flex align-items-center justify-content-center text-white fw-semibold" style="height: 200px; background: #1F7D53; font-size: 1.1rem; border-radius: 15px 15px 0 0;">
+							<span>Inkognito: An Anonymous Letter-sending Website</span>
+						</div>
+						<div class="card-body p-4">
+							<h5 class="card-title fw-semibold mb-3" style="color: #18230F;">Inkognito: An Anonymous Letter-sending Website</h5>
+							<p class="card-text">Send anonymous messages securely with shareable links, inbox views, and basic moderation controls.</p>
+							<div class="d-flex gap-2">
+								<span class="badge bg-secondary">Python</span>
+								<span class="badge bg-secondary">HTML</span>
+								<span class="badge bg-secondary">CSS3</span>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section (hidden for minimal mockup) -->
+    <section id="skills" class="py-5 text-white d-none" style="scroll-margin: 100px;">
+        <!-- Background decorative elements removed -->
+        
+        <div class="container position-relative">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-4 fw-bold mb-4 text-white">Skills & Technologies</h2>
+                    <div class="position-relative">
+                        <div style="width: 100px; height: 4px; background: #1F7D53; margin: 0 auto; border-radius: 2px;"></div>
+                    </div>
+                    <p class="mt-4 fs-5" style="color: rgba(255,255,255,0.8);">Technologies and tools I work with to bring ideas to life.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="text-center p-4 rounded" style="background: rgba(255,255,255,0.15); border-radius: 15px; border: 1px solid rgba(255,255,255,0.2);">
+                        <div class="fs-1 mb-3">💻</div>
+                        <h5 class="fw-semibold mb-3">Frontend</h5>
+                        <p class="mb-0 small">HTML5, CSS3, JavaScript, Bootstrap</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="text-center p-4 rounded" style="background: rgba(255,255,255,0.15); border-radius: 15px; border: 1px solid rgba(255,255,255,0.2);">
+                        <div class="fs-1 mb-3">⚙️</div>
+                        <h5 class="fw-semibold mb-3">Backend</h5>
+                        <p class="mb-0 small">Python, PHP</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="text-center p-4 rounded" style="background: rgba(255,255,255,0.15); border-radius: 15px; border: 1px solid rgba(255,255,255,0.2);">
+                        <div class="fs-1 mb-3">🗄️</div>
+                        <h5 class="fw-semibold mb-3">Database</h5>
+                        <p class="mb-0 small">MySQL, MongoDB</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="text-center p-4 rounded" style="background: rgba(255,255,255,0.15); border-radius: 15px; border: 1px solid rgba(255,255,255,0.2);">
+                        <div class="fs-1 mb-3">📱</div>
+                        <h5 class="fw-semibold mb-3">Mobile</h5>
+                        <p class="mb-0 small">iOS, Android</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="text-center p-4 rounded" style="background: rgba(255,255,255,0.15); border-radius: 15px; border: 1px solid rgba(255,255,255,0.2);">
+                        <div class="fs-1 mb-3">🎨</div>
+                        <h5 class="fw-semibold mb-3">Design</h5>
+                        <p class="mb-0 small">Figma, Photoshop, Illustrator</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="text-center p-4 rounded" style="background: rgba(255,255,255,0.15); border-radius: 15px; border: 1px solid rgba(255,255,255,0.2);">
+                        <div class="fs-1 mb-3">☁️</div>
+                        <h5 class="fw-semibold mb-3">Cloud</h5>
+                        <p class="mb-0 small">Google Cloud, Heroku</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="text-center p-4 rounded" style="background: rgba(255,255,255,0.15); border-radius: 15px; border: 1px solid rgba(255,255,255,0.2);">
+                        <div class="fs-1 mb-3">🔧</div>
+                        <h5 class="fw-semibold mb-3">Tools</h5>
+                        <p class="mb-0 small">Git, Docker, VS Code</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="text-center p-4 rounded" style="background: rgba(255,255,255,0.15); border-radius: 15px; border: 1px solid rgba(255,255,255,0.2);">
+                        <div class="fs-1 mb-3">🚀</div>
+                        <h5 class="fw-semibold mb-3">DevOps</h5>
+                        <p class="mb-0 small">Linux</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (hidden for minimal mockup) -->
+    <section id="contact" class="py-5 d-none" style="scroll-margin: 100px;">
+        <!-- Background decorative elements removed -->
+        
+        <div class="container position-relative">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-4 fw-bold mb-4" style="color: #ffffff;">Let's Connect</h2>
+                    <div class="position-relative">
+                        <div style="width: 100px; height: 4px; background: #1F7D53; margin: 0 auto; border-radius: 2px;"></div>
+                    </div>
+                    <p class="mt-4 fs-5" style="color: rgba(255,255,255,0.8);">Ready to bring your ideas to life? Let's start a conversation.</p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row g-4">
+                        <!-- Contact Info Cards -->
+                        <div class="col-md-4">
+                            <div class="text-center p-4 rounded" style="background: #27391C; border: 1px solid #1F7D53; height: 100%;">
+                                <div class="mb-4">
+                                    <div style="width: 80px; height: 80px; background: #1F7D53; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                                        <span style="font-size: 2rem;">📧</span>
+                                    </div>
+                                </div>
+                                <h5 class="fw-semibold mb-3" style="color: #1F7D53;">Email Me</h5>
+                                <p class="mb-3" style="color: rgba(255,255,255,0.8);">Drop me a line anytime</p>
+                                <a href="mailto:eliazamaemalibiran@gmail.com" class="btn btn-sm px-3 py-2 rounded-pill" style="background: #1F7D53; border: none; color: white;">eliazamaemalibiran@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="text-center p-4 rounded" style="background: #27391C; border: 1px solid #1F7D53; height: 100%;">
+                                <div class="mb-4">
+                                    <div style="width: 80px; height: 80px; background: #1F7D53; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                                        <span style="font-size: 2rem;">💼</span>
+                                    </div>
+                                </div>
+                                <h5 class="fw-semibold mb-3" style="color: #1F7D53;">LinkedIn</h5>
+                                <p class="mb-3" style="color: rgba(255,255,255,0.8);">Let's connect professionally</p>
+                                <a href="#" class="btn btn-sm px-3 py-2 rounded-pill" style="background: #1F7D53; border: none; color: white;">Connect Now</a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="text-center p-4 rounded" style="background: #27391C; border: 1px solid #1F7D53; height: 100%;">
+                                <div class="mb-4">
+                                    <div style="width: 80px; height: 80px; background: #1F7D53; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                                        <span style="font-size: 2rem;">🐙</span>
+                                    </div>
+                                </div>
+                                <h5 class="fw-semibold mb-3" style="color: #1F7D53;">GitHub</h5>
+                                <p class="mb-3" style="color: rgba(255,255,255,0.8);">Check out my code</p>
+                                <a href="#" class="btn btn-sm px-3 py-2 rounded-pill" style="background: #1F7D53; border: none; color: white;">View Projects</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="text-center mt-5">
+                        <h5 class="mb-4" style="color: rgba(255,255,255,0.9);">Follow Me</h5>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <a href="#" class="d-inline-block text-center text-decoration-none text-white rounded-circle" style="width: 60px; height: 60px; background: #1F7D53; line-height: 60px;">
+                                📧
+                            </a>
+                            <a href="#" class="d-inline-block text-center text-decoration-none text-white rounded-circle" style="width: 60px; height: 60px; background: #1F7D53; line-height: 60px;">
+                                💼
+                            </a>
+                            <a href="#" class="d-inline-block text-center text-decoration-none text-white rounded-circle" style="width: 60px; height: 60px; background: #1F7D53; line-height: 60px;">
+                                🐙
+                            </a>
+                            <a href="#" class="d-inline-block text-center text-decoration-none text-white rounded-circle" style="width: 60px; height: 60px; background: #1F7D53; line-height: 60px;">
+                                🐦
+                            </a>
+                            <a href="#" class="d-inline-block text-center text-decoration-none text-white rounded-circle" style="width: 60px; height: 60px; background: #1F7D53; line-height: 60px;">
+                                📘
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-4" style="background: transparent; border-top: 1px solid #1F7D53;">
+        <!-- Background decorative elements removed -->
+        
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Eliaza Mae Malibiran. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
